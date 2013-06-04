@@ -1,0 +1,191 @@
+body, td, th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+}
+
+body {
+    background: #cce7fc url(../images/bgtop.gif) top repeat-x;
+    margin: 0;
+}
+
+a:link {
+    color: #3366FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3366FF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #3c8caf;
+    text-decoration: none;
+}
+
+#outer {
+    background: url(../images/bubblebg.gif) top center no-repeat;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#header {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0 auto; /* the same reason*/
+    background: url(../images/title.png) no-repeat left top;
+    width: 300px;
+    height: 150px;
+}
+
+#nav {
+    background: url(../images/nav.gif) repeat-x left top;
+    height: 43px;
+    width: 100%;
+    padding-top: 8px;
+}
+
+#nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav ul li {
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    background: url(../images/li.gif) top left no-repeat;
+}
+
+#nav ul li a {
+    color: #0f6086;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block; /*这里为什么？莫非inline元素不支持padding这写东西？*/
+    background: url(../images/toparrow.gif) top center no-repeat;
+}
+
+#nav ul li a:hover {
+    color: #fff;
+    background: url(../images/hoverarrow.gif) top center no-repeat;
+}
+
+#left_column {
+    width: 820px;
+    float: left;
+    padding: 20px 15px 20px 15px;
+    line-height: 18px;
+}
+
+#left_column h2 {
+    margin: 0; /*h2会自动有margin-top 和  margin-bottom的*/
+    font-weight: normal;
+    font-size: 18px;
+    color: #3c8caf;
+    width: 498px;
+    padding-left: 20px;
+    border-left: 1px solid #b8d7f4;
+    border-right: 1px solid #b8d7f4;
+    height: 31px;
+    padding-top: 8px;
+    background: url(../images/h2.gif) repeat-x top;
+}
+
+#right_column {
+    width: 220px;
+    float: right;
+    padding: 20px 10px 20px 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#simple_map img {
+    border: solid #cce7fc 5px;
+    width: 500px;
+}
+
+#simple_map img:hover {
+    border: solid blue 5px; /* flash effect  */
+}
+
+#map_canvas {
+    clear: both;
+    border: 1px solid #3c8caf;
+    width: 800px;
+    height: 600px;
+    margin-top: 30px; /*这里一定要大于23px才能见效果，是由于mark new path的那个button引起的*/
+}
+
+#mark_button_search_form {
+    margin-top: 20px;
+}
+
+#place_search_input {
+    margin-left: 100px;
+    margin-right: 20px;
+    width: 200px;
+    height: 20px;
+}
+
+#place_search_button {
+    margin-left: 50px
+}
+
+
+
+#reset_link {
+    font-size: 20px;
+}
+
+#submit_button {
+    display: block; /*如果不这样的话，里面再嵌一个img会有问题，margin-top将很诡异，这里也是内联元素的问题*/
+    margin-top: 20px;
+}
+
+#submit_button img {
+    border: transparent;
+    width: 60px;
+}
+
+#places_form {
+    width: 400px;
+    text-align: left;
+}
+
+#places_form h2 {
+    color: #3366FF;
+}
+
+.delete_link {
+    padding-left: 10px;
+}
+
+#mark_new_path_button{margin:10px 0 10px 0;display:block;}
+
+.page_bottom{clear:both;height:50px;}
+
+#footer {
+    clear: both;
+    background: url(../images/footer.gif) top repeat-x;
+    height: 12px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
